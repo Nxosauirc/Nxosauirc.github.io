@@ -68,6 +68,13 @@ ul,li{
     position: relative;
 }
 
+.analysis{
+    font-family: "Dancing Script", cursive;
+    font-weight: <weight>;
+    font-style: normal;
+    color: white;
+}
+
 /* nav bar */
 .nav{
     text-decoration: none;
