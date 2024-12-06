@@ -1,0 +1,35 @@
+<!Doctype html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Doto:wght@100..900&family=Jacquard+12&family=Jacquard+24&family=Long+Cang&family=Yuji+Mai&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css">
+
+  <title>Prologue</title>
+
+</head>
+
+<body onload="displayText(dialogueTexts[0], 'text')">
+  <div class="container">
+    <div class="screen">
+      <img src="ring.jpg" id="ring">
+      <img src="schoolGate.jpg" style="display: none;" id="gate">
+    </div>
+    <div class="choices">
+      <button id="choice1" style="display: none;" onclick="read()">Read</button>
+      <button id="choice2" style="display: none;" onclick="prologueEnd()">Already Know</button>
+      <button id="choice3" style="display: none;" onclick="goToChap1()">Walk In</button>
+    </div>
+    <div class="dialogue" onclick="nextDialogue()">
+      <p id="text"></p>
+      <span id="next-indicator" style="display: none;">→</span>
+    </div>
+  </div>
+  <script src="function.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+{
+	'姓名'
+	'种族'
+	'年龄'
+	'年级'
+	'学院'
+	'体型'
+	'体质'
+	'外貌'
+	'魅力'
+	'意志'
+	'智力'
+	'力量'
+	'法力'
+	'道德'
+	'声誉'
+	'家世'
+	'资产'
+}
+{
+	'周目'
+	'学年'
+	'学期'
+	'月份'
+	'时间'
+}
+{
+	'通识/专业1'
+	'通识/专业2'
+	'通识/专业3'
+	'选修1'
+	'选修2'
+	'平均'
+}
+{
+	'背包'
+	'课表'
+	'地图'
+	'状态'
+}
+地图
+{	
+主楼
+	地下
+		'地牢'
+			'通识/专业教室'
+		'禁闭室'
+		'盥洗室'
+		'宿舍'
+		'学院休息室'
+		'储物间'
+	一层
+		'学校大门'
+		'礼堂'
+		'办公室'
+		'盥洗室'
+		'宴会厅'
+	二层
+		'厨房'
+		'食堂'
+		'通识/专业教室'
+		'选修教室'
+		'盥洗室'
+	三层
+		'校医室'
+		'通识/专业教室'
+		'选修教室'
+		'盥洗室'
+	？层
+		'办公室'
+	藏书塔
+		'禁书馆'
+		'图书馆'
+	辰星塔
+		'宿舍'
+		'学院休息室'
+		'盥洗室'
+	钟塔
+		'镜廊'
+			'通识/专业教室'
+			'宿舍'
+			'学院休息室'
+		'盥洗室'
+
+	'花园'
+
+	'禁林'
+		
+	'竞技场'
+
+	'中央广场'
+	'药剂店'
+	'杂货店'
+	'服装店'	
+	'邮局'
+	'教堂'
+	'宫殿'
+}
+
+//Prologue
+无论如何，你收到了来自Arcanuscalae的入学戒指。
+同样到来的，还有一封学生手册
+select 阅读 / 我已经了解了
+
+学生手册
+
+学院简介
+欢迎各位来自世界各地的魔法师来到阿坎娜斯喀蕾学院！无论你是来自背景深厚的魔法世家，还是来自主世界的普通人，只要你有着操纵魔法的天赋，阿坎娜斯喀蕾都欢迎你的到来。我校历史悠久，由魔法世界著名的大魔法师Llywelyn一手创办和建立，至今已有290年的辉煌历史。学院致力于探索和掌握魔法的奥秘，以抵御未来可能出现的灾难。
+
+学制安排
+阿坎娜斯喀蕾学院实行七年制教学，每学年160天分为每个学期40天的四个学期。每个学期，学生最多可以选择三门通识课或专业课，加上两门选修课。新生的前两年主要学习通识课，为之后各自学院的专业课打下坚实的基础。后面五年则主要集中在专业课的学习，除了更深入的理论知识外，还包括大量的实践内容。
+学生的课堂表现和平时成绩将被记录在案，每两学期会进行一次大考，成绩将用于评估学生的整体表现。在每学年结束时，学生将获得完整修完课程的评分。
+
+你的课程考勤以及平均分会被记录在案，请合理安排时间。
+select 再看一遍 / 我已经了解了
+
+那么，请准备好迎接你的开学典礼
+
+const dialogueTexts = [
+	"As fate had intended, you received an enrollment ring from Arcanuscalae.",
+	"Also arriving was a Student Handbook.",
+
+	"Student Handbook",
+	"Introduction to the Academy",
+	"Welcome to the Arcanuscalae Academy for wizards from all over the world! Whether you come from a rich magical family or are a commoner from the main world, as long as you have the talent to manipulate magic, you are welcome at Akanas Kare.",
+	"Our school has a long history, founded and established by Llywelyn, a famous archmage in the wizarding world, with a glorious history of 290 years. The academy is dedicated to exploring and mastering the mysteries of magic in order to ward off possible future disasters.",
+	"Academic Program",
+	"Arcanuscalae Academy operates on a seven-year academic system, with the 160 days of each academic year divided into four semesters of 40 days each. Each semester, students may choose up to three general education or major courses, plus two electives.",
+	"The first two years of the freshman year are devoted to general education courses, which provide a solid foundation for the major courses in their respective colleges. The next five years focus on the major courses, which include a large practical component in addition to more in-depth theoretical knowledge.",
+	"Students' classroom performance and regular grades will be recorded, and every two semesters a major examination will be held, the results of which will be used to assess the student's overall performance. At the end of each academic year, students will receive a grade for a fully completed course.",
+	"Your course attendance and grade point average will be recorded, so please organize your time wisely.",
+
+	"Now, get ready for your first day at Arcanuscalae."
+];

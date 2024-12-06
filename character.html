@@ -1,0 +1,115 @@
+<!Doctype html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Doto:wght@100..900&family=Jacquard+12&family=Jacquard+24&family=Long+Cang&family=Yuji+Mai&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css">
+
+  <title>Character Profile</title>
+
+</head>
+<body>
+
+  <div class="character-card">
+    <div class="left-section">
+      <img id="profile" src="male.png" alt="Profile Picture" class="profile-pic">
+      <div class="personal-info">
+        <label>First Name: <input id="fn" type="text" placeholder="Please enter your NAME"></label><br>
+        <label>Family Name: <input id="ln" type="text" placeholder="Please enter your NAME"></label><br>
+        <label>Gender: <select id="gender" name="gender" onchange="picture()">
+          <option name="gender" value="male">Male</option>
+          <option name="gender" value="female">Female</option>
+        </select></label><br>
+        <label>Age: <select name="age" id="age">
+          <option name="age" value="15">15</option>
+          <option name="age" value="16">16</option>
+        </select></label><br>
+        <label>Race: <select name="race" id="race">
+          <option name="race" value="pureBlood">Pure Blood</option>
+          <option name="race" value="human">Human</option>
+          <option name="race" value="chimera">Chimera</option>
+          <option name="race" value="MordriaPB">Mordia (P.B.)</option>
+          <option name="race" value="MordriaH">Mordia (human)</option>
+          <option name="race" value="MordriaC">Mordia (Chimera)</option>
+        </select></label>
+      </div>
+    </div>
+
+    <div class="right-section">
+      <h2>Attributes</h2>
+      <div class="attributes">
+        <div id="physique-container">
+          <span>Physique:</span>
+          <output id="physique"></output>
+          <button onclick="single('physique')"></button>
+        </div>
+        <div id="constitution-container">
+          <span>Constitution:</span>
+          <output id="constitution"></output>
+          <button onclick="single('constitution')"></button>
+        </div>
+        <div id="appearance-container">
+          <span>Appearance:</span>
+          <output id="appearance"></output>
+          <button onclick="single('appearance')"></button>
+        </div>
+        <div id="charm-container">
+          <span>Charm:</span>
+          <output id="charm"></output>
+          <button onclick="single('charm')"></button>
+        </div>
+        <div id="sanity-container">
+          <span>Sanity:</span>
+          <output id="sanity"></output>
+          <button onclick="single('sanity')"></button>
+        </div>
+        <div id="intelligence-container">
+          <span>Intelligence:</span>
+          <output id="intelligence"></output>
+          <button onclick="single('intelligence')"></button>
+        </div>
+        <div id="strength-container">
+          <span>Strength:</span>
+          <output id="strength"></output>
+          <button onclick="single('strength')"></button>
+        </div>
+        <div id="mana-container">
+          <span>Mana:</span>
+          <output id="mana"></output>
+          <button onclick="single('mana')"></button>
+        </div>
+        <div id="morality-container">
+          <span>Morality:</span>
+          <output id="morality"></output>
+          <button onclick="single('morality')"></button>
+        </div>
+        <div id="reputation-container">
+          <span>Reputation:</span>
+          <output id="reputation"></output>
+          <button onclick="single('reputation')"></button>
+        </div>
+        <div id="authority-container">
+          <span>Authority:</span>
+          <output id="authority"></output>
+          <button onclick="single('authority')"></button>
+        </div>
+        <div id="wealth-container">
+          <span>Wealth:</span>
+          <output id="wealth"></output>
+          <button onclick="single('wealth')"></button>
+        </div>
+      </div>
+      <button id="generate" onclick="generate()">Generate</button>
+      <button id="confirm" onclick="confirmAttr()">Confirm</button>
+      <button id="next" onclick="nextStep()" disabled>Next Step</button>
+    </div>
+  
+  <script src="function.js"></script>
+
+</body>
+
+</html>
